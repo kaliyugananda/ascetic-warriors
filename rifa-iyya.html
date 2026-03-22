@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warrior Ascetics, Criminals and Outcasts</title>
+  <meta name="description" content="Prototype website about marginal and warrior ascetics (Aghori, Naga Babas, Nath Yogis)." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#0f0f10;
+      --panel:#111214;
+      --muted:#9aa0a6;
+      --accent:#c86b3a;
+      --ivory:#f6efe6;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1200px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+        url('assets/img/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--ivory);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+    /* Title block */
+    .titleBlock {
+      margin: 50px auto;
+      max-width: var(--maxw);
+      background: rgba(0,0,0,0.44);
+      border: 1px solid #d87b3e;
+      border-radius: 16px;
+      padding: 40px 70px 70px 70px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .introText {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .introText strong.safran {
+      font-family: "Aref Ruqaa", "Cinzel", Georgia, serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.9);
+      display: block;
+      margin: 0;
+    }
+
+    .titlePrefix {
+      color: #ff0000;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .titleSuffix {
+      color: #d87b3e; 
+      font-size: 36px;
+      padding-bottom: 30px;
+      display: block;
+    }
+
+    .introText p {
+      font-size: 17.2px;
+      line-height: 1.76;
+      color: #e8d9b8;
+      margin: 0;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+    .card {
+      text-align: center;
+      padding: 16px 16px 0px;
+      background: #210202 !important;
+      border: 0.5px solid #d87b3e;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: #f49e5c;
+      transform: translateY(-4px);
+    }
+    .card .thumb {
+      height: 240px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 14px;
+    }
+
+    /* Footer */
+    footer, footer * { color: #e8d9b8 !important; }
+    footer a:hover {
+      border-bottom: 1px solid #d87b3e;
+    }
+
+    /* Responsive */
+    @media (max-width:1000px) {
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .titlePrefix { font-size: 38px; }
+      .titleSuffix { font-size: 30px; }
+      .introText p { font-size: 16px; }
+    }
+
+    @media (max-width:640px) {
+      .grid { grid-template-columns: 1fr; }
+      .titleBlock { padding: 36px 32px 50px 32px; border-radius: 14px; }
+      .titlePrefix { font-size: 32px; }
+      .titleSuffix { font-size: 26px; }
+      .introText p { font-size: 15px; line-height: 1.68; }
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Title block -->
+  <div class="container">
+    <div class="titleBlock" id="map">
+      <div class="introText">
+        <strong class="safran titlePrefix">RIFA‘IYYA</strong>
+        <p><br>The Rifa‘iyya emerged in the 12th century in Iraq as one of the most intense and controversial Sufi tariqas, founded by Ahmad ibn ‘Alī al-Rifa‘ī (died 1182), an ascetic master from the marshlands of lower Iraq. Nicknamed “Abū l-‘Alamayn” (father of the two worlds), al-Rifa‘ī embodied a spirituality in which divine love manifested through violent ecstasy and physical confrontation with suffering. His order, rapidly spreading across the Islamic world—from Syria to Egypt, Anatolia to the edges of the Maghreb—became famous for its ritual practices that defied the limits of the human body, transforming pain into a direct path to mystical union. Rooted in passionate devotion to God and the Prophet, this path attracted both popular crowds and the condemnation of rigorist ulama, who saw in it a drift toward excess and heresy.</p><br>
+        
+        <p>The history of the Rifa‘iyya is inscribed in the flourishing of medieval Sufism, at a time when orders multiplied to meet the spiritual thirst of the masses in the face of legalistic rigidity. Al-Rifa‘ī, trained under Qadiriyya masters and influenced by earlier ecstatic traditions, established his center at Umm ‘Ubayda in the Iraqi marshes, where he drew disciples through his miracles and his teaching on divine love as a consuming flame. After his death, the order spread quickly under the impetus of his khalifas, reaching Baghdad, Damascus, and Cairo by the 13th century. The Egyptian Mamluks and Anatolian Ottomans patronized it, integrating its zawiyas into social and military structures, while branches developed in North Africa and as far as India. This expansion came with an ambiguous reputation: the Rifa‘iyya became the “howlers” of Sufism, their vocal dhikr resounding like spiritual war cries in the oriental nights.</p><br>
+        
+        <p>At the heart of their asceticism lies an immersion in physical pain as an expression of divine love, a practice that gave the order a particularly dark aura in the eyes of outside observers. Rifa‘i rituals, often performed publicly during mawlids or Sufi festivals, included spectacular demonstrations where dervishes drove spikes, knives, or needles into their bodies without bleeding or showing pain, affirming that divine grace protected the true believer. These perforations, accompanied by shouted dhikr and drum rhythms, turned the flesh into a battlefield where pain became a testimony of ecstasy. Adepts sometimes ingested ground glass or walked on embers, their scarred bodies bearing the marks of a devotion that flirted with self-destruction. This confrontation with suffering was not gratuitous: it aimed to shatter the ego, transcend the pleasure/pain duality, and manifest the divine presence in the mortal body—a theology in which divine love consumes everything, even the flesh.</p><br>
+        
+        <p>Even more sinister were the marginal branches of the order, where asceticism crossed the boundaries of orthodoxy to plunge into communion with dark forces. Certain Rifa‘i dervishes, influenced by qalandari traditions, isolated themselves in cemeteries for nocturnal retreats, invoking jinn and wandering souls in trances that mixed howls and convulsions. These often secret, nighttime practices included ritual scarifications where spilled blood was offered as a symbolic sacrifice, reinforcing the image of a Sufism that embraced death as an ally in the quest for annihilation. Medieval accounts, such as those of Ibn Battuta or Mamluk chroniclers, describe these sessions with fascinated horror: pierced bodies, faces contorted in ecstasy, hoarse voices repeating the divine name to exhaustion, turning zawiyas into theaters of sacred violence that terrified as much as they attracted.</p><br>
+        
+        <p>This ritual darkness, though central to the extreme fringes, fits within a theology of passionate love where suffering becomes a testimony of divine proximity. The Rifa‘iyya held that only physical trial could overcome the illusions of the world and attain fana, annihilation in God. Their somber legacy irrigated later Sufi currents, influencing qalandari and malang branches, and even contemporary practices of the Rifa‘i al-qubur in Iraq. Modern studies highlight this duality: an order that, through its immersion in pain and violent ecstasy, contributed to the popular expression of Sufism, transforming suffering into a nectar of illumination. The Rifa‘iyya, these ecstatic howlers of the oriental nights, remind us that the mystical path can plunge into the abysses of the flesh, where violence becomes the road to the eternal.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+
+        <div class="grid">
+          <a href="vratya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Vratya</h3>
+            </article>
+          </a>
+          <a href="pasupata.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Pasupata</h3>
+            </article>
+          </a>
+          <a href="sicarius.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Sicarii</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="kapalika.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kapalika</h3>
+            </article>
+          </a>
+          <a href="kalamukha.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kalamukha</h3>
+            </article>
+          </a>
+          <a href="lingayat-virashaiva.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Lingayat / Virashaiva</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          
+            <article class="card active">
+              <div class="thumb" style="background-image:url('assets/img/skull-02.jpg')"></div>
+              <h3>Rifa‘iyya</h3>
+            </article>
+          
+          <a href="qalandariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Qalandariyya</h3>
+            </article>
+          </a>
+          <a href="thugs.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Thugs</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="haydariyya-jawbariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Haydariyya / Jawbariyya</h3>
+            </article>
+          </a>
+          <a href="khalwatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Khalwatiyya</h3>
+            </article>
+          </a>
+          <a href="malmatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malmatiyya</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="madariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Madariyya</h3>
+            </article>
+          </a>
+          <a href="nath-yogis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Nath Yogis</h3>
+            </article>
+          </a>
+          <a href="dasanami-naga-sannyasi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Dasanami Naga Sannyasi</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="gosain-bairagi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Gosain & Bairagi</h3>
+            </article>
+          </a>
+          <a href="satnamis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Satnamis</h3>
+            </article>
+          </a>
+          <a href="chhinnamasta.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Chhinnamasta Sadhaks</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-i-al-qubur.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘i al-qubur</h3>
+            </article>
+          </a>
+          <a href="aghori.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Aghori</h3>
+            </article>
+          </a>
+          <a href="malangs-jalali-haydari.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malangs jalali & Haydari</h3>
+            </article>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+  <div class="container" style="text-align:center; font-size:14px; padding:40px 0">
+    <div>
+      <a href="index.html" style="color:#e8d9b8; text-decoration:none; border-bottom:1px solid transparent; transition:border-bottom 0.3s;">
+        Warrior Ascetics, Criminals and Outcasts
+      </a>
+    </div>
+    <div style="margin-top:8px">© 2002</div>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>

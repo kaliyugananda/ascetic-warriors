@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warrior Ascetics, Criminals and Outcasts</title>
+  <meta name="description" content="Prototype website about marginal and warrior ascetics." />
+
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+:root {
+  --bg: #0f0f10;
+  --panel: #111214;
+  --muted: #9aa0a6;
+  --accent: #c86b3a;
+  --ivory: #f6efe6;
+  --glass: rgba(255, 255, 255, 0.03);
+  --maxw: 1200px;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+    url('assets/img/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ── Title block ─────────────────────────────────────────────── */
+.titleBlock {
+  margin: 50px auto;
+  max-width: var(--maxw);
+  background: rgba(0, 0, 0, 0.44);
+  border: 1px solid #d87b3e;
+  border-radius: 16px;
+  padding: 40px 70px 70px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introText {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.introText strong.safran {
+  font-family: "Aref Ruqaa", "Cinzel", Georgia, serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.9);
+  display: block;
+  margin: 0;
+}
+
+.titlePrefix {
+  color: #ff0000;
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.titleSuffix {
+  color: #d87b3e;
+  font-size: 36px;
+  padding-bottom: 30px;
+  display: block;
+}
+
+.introText p {
+  font-size: 17.2px;
+  line-height: 1.76;
+  color: #e8d9b8;
+  margin: 0 0 1.4em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Titres de sections en rouge */
+h2, h3 {
+  color: #ff0000;
+  margin: 2.4em 0 1em;
+}
+
+/* Listes (puces et numérotées) */
+.introText ul,
+.introText ol {
+  color: var(--ivory);
+  text-align: left;
+  margin: 1.6em 0;
+  padding-left: 2.4em;
+  max-width: 80ch;
+}
+
+.introText ul {
+  list-style-type: disc;
+}
+
+.introText ol {
+  list-style-type: decimal;
+}
+
+.introText li,
+.introText li::marker {
+  color: #e8d9b8;
+}
+
+/* ── Cards ───────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.card {
+  text-align: center;
+  padding: 16px 16px 0;
+  background: #210202;
+  border: 0.5px solid #d87b3e;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #f49e5c;
+  transform: translateY(-4px);
+}
+
+.card .thumb {
+  height: 240px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 14px;
+}
+
+/* ── Footer ──────────────────────────────────────────────────── */
+footer,
+footer * {
+  color: #e8d9b8 !important;
+}
+
+footer a:hover {
+  border-bottom: 1px solid #d87b3e;
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .titlePrefix {
+    font-size: 38px;
+  }
+  .titleSuffix {
+    font-size: 30px;
+  }
+  .introText p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .titleBlock {
+    padding: 36px 32px 50px;
+    border-radius: 14px;
+  }
+  .titlePrefix {
+    font-size: 32px;
+  }
+  .titleSuffix {
+    font-size: 26px;
+  }
+  .introText p {
+    font-size: 15px;
+    line-height: 1.68;
+  }
+}
+blockquote {
+  color: #e8d9b8;              
+  font-style: italic;           
+  margin: 2em 0;                
+  padding: 0 1.5em;             
+  border-left: 4px solid #d87b3e;   
+  quotes: "“" "”" "‘" "’";     
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="titleBlock" id="map">
+      <div class="introText">
+        <strong class="safran titlePrefix">AGNI-VRATYA</strong>
+        <p><br>
+
+<p>The Agni-Vratyas (to be strictly distinguished from the Vedic <a href="vratya.html" target="_blank">Vratyas</a>), known in the most occult and dreaded traditions as the “Hounds of Nergal” or “Crocodiles of Kur”, formed an ascetic and martial brotherhood whose existence unfolded on the putrid margins of the Mesopotamian and Indo-Aryan worlds. Linked in certain obscure fragments to the warrior tribe of the Marusebemati or Saptajātiputrāḥ, this community possessed neither fixed territory nor consoling doctrine: it was defined solely by a monstrous practice — the forced and irreversible awakening of an inner fire of both divine and infernal origin.</p>
+
+<p>This fire was no noble spiritual energy, nor a purifying flame. It was an invasive presence, a living and voracious entity, a parasitic ember lodged deep within the flesh. Once awakened, it fed upon the initiate himself, first consuming his illusions, then his memories, and finally the last traces of his humanity. It bound body and soul in an eternal vrata: those who accepted it could neither fully die nor truly live. The survivors became hybrid creatures, capable of perceiving and crossing the invisible strata of reality — not to find peace, but to wander as conscious shadows through realms of slow decomposition, eternal stagnation, and endless suffering.</p>
+
+<h2>Origin and Migration</h2>
+
+<p>The origins of the Agni-Vratyas vanish into the darkness of the 2nd millennium BCE, at the heart of the blackest cults devoted to Nergal and Ereshkigal. Nergal, lord of plague, war, and the devouring sun, embodied total, remorseless destruction. Ereshkigal, his sombre consort, ruled the Kur — the chthonic womb where souls, deprived of light and rest, slowly dissolved into larval existence. The myth of Inanna’s descent through the seven gates of Irkalla was subverted and perverted: what had been a temporary trial for the Sumerians became, among the Agni-Vratyas, a permanent protocol of voluntary disintegration of identity. Each gate crossed was an amputation of self; each stage, a consensual death.</p>
+
+<p>Between 1200 and 1000 BCE, these accursed groups migrated northwest toward the Indian subcontinent, crossing Iran and Central Asia like a silent plague. Late Vedic texts barely mention them, assimilating them to the Dasyu — those foreign, impure bringers of chaos. In this new soil their cult underwent a terrifying alchemical fusion: Nergal merged into the howling, pathogenic figure of Rudra; Ereshkigal found a monstrous echo in the most archaic and bloodthirsty aspects of Kali; Inanna prefigured the icy ambivalence of Shiva, in which destruction is no longer the opposite of creation, but its sole engine, its primal condition, and its inevitable culmination.</p>
+
+<h2>The Initiation – Seven Years of Descent</h2>
+
+<p>The initiation, spread over seven interminable years, constituted a methodical, irreversible descent into liminal states in which the human being gradually came undone. The first year shattered body and mind through extreme fasting, total sensory deprivation, and forced breathing in caves or suffocating pits. The goal was not illumination, but awakening to the navel of an alien heat — a voracious, almost sentient presence that had to be contained lest it consume the initiate from within.</p>
+
+<p>The following six years plunged the initiate into three earthly hells:</p>
+<ul>
+    <li>The <strong>desert</strong>: absolute solitude beneath a merciless sun, where the initiate learned to “drink the solar fire” until visions became permanent hallucinations and skin cracked like parched earth.</li><br>
+    <li>The <strong>swamps</strong>: immersion in living putrefaction, where crocodiles — sacred totems of the sect, silent embodiments of slow death — waited in black water. There the initiate had to “enter the maw of the kušû-makara” astrally: if he faltered, he dissolved; if he survived, the crocodile became both guardian and mirror.</li><br>
+    <li>The <strong>forest</strong>: complete erasure of social identity, naked wandering among indistinct, hostile, ravenous entities, where perception fragmented into a mosaic of terror.</li>
+</ul>
+
+<p>The final rite took place in a womb-cave carved like a wound in the earth. The initiate, naked, was immersed in a basin of black, icy water — an exact replica of the dead waters of Kur. This immersion was not symbolic: it triggered a real dissolution of consciousness, a temporary death in which the soul floated, vulnerable, between worlds. Upon emerging, trembling and half-drowned, the initiate drank from a golden chalice a mixture of human and bovine milk — an obscene union of the nurturing and the impure, the living and the corpse. He was reborn stripped bare, branded with a red-hot horizontal scar beneath the navel: a discreet, burning stigmata that served as a permanent portal to the lower lokas.</p>
+
+<h2>Infernal Cosmology</h2>
+
+<p>The cosmology of the Agni-Vratyas was a tripartite infernal vision of fire:</p>
+<ol>
+    <li>the fire of lightning, fulminating and pestilential;</li>
+    <li>the subterranean fire, slow, corrosive, digesting everything like a crocodile’s juices;</li>
+    <li>the solar fire, constant, merciless, desiccating souls.</li>
+</ol>
+
+<p>These three flames fused into the Agni antar, a fragment of Nergal’s power embodied in the initiate’s flesh. The aim was never liberation, but conscious damnation: to become an active agent of universal dissolution rather than a passive victim.</p>
+
+<h2>Practices and Symbols</h2>
+
+<p>Their ritual practices mirrored their faith: astral journeys achieved through total exhaustion and extreme concentration; obsessive meditation on the umbilical scar; direct confrontation with the “howl of Rudra-Nergal”, a sonic tear that pierced the soul like a poisoned arrow; offerings of blood, hair, crushed bone, and sometimes human remains burned in pestilential fires.</p>
+
+<p>The crocodile held a central and terrifying place. A liminal animal, amphibious and patient, it embodied slow death, eternal digestion, the one-way transition.</p>
+
+<h2>The Sacred Tension</h2>
+
+<p>The brotherhood was permanently torn by a sacred tension: the Raw Fires, who surrendered to the pure destruction of Nergal-Rudra until madness and total dissolution; the Tempered Fires, who attempted to channel this force through Ereshkigal’s icy discernment. This inner war was not a flaw — it was the very heartbeat of the order’s black core.</p>
+
+<h2>Appearance and Ritual Objects</h2>
+
+<p>Their appearance was that of spectres: naked bodies coated in ashes and dried blood, black garments like death itself, adornments of human bone, crocodile teeth, and fragments of meteoric iron. This sky-fallen metal, both celestial and funereal, was forged into amulets, ritual knives, and short swords. Every object became a vector of power and a constant reminder: even the heavens send their weapons down to hell.</p>
+
+<h2>Disappearance and Latent Survival</h2>
+
+<p>By the 3rd century BCE, the Agni-Vratyas vanish from visible sources, as though reabsorbed by the swamps and darkness they had never truly left. Yet their disappearance remains suspicious. Discreet scars beneath the navel, howls heard in the sleep of certain isolated ascetics, folk tales of “swamp sorcerers” capable of surviving the impossible… all suggest a subterranean continuity.</p>
+
+<blockquote>
+    “As long as a single initiate bears the scar and hears the howl in his bones, the fire of Nergal-Rudra will continue to consume the world of the living — slowly, inexorably — until nothing remains but conscious ashes.”
+</blockquote>
+
+<p>In this light, the Agni-Vratyas are not an extinct sect. They are a dormant, diffuse, invisible presence — a spiritual infection waiting to awaken the moment a man dares, one night, to listen to the fire already burning beneath his skin.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+
+        <div class="grid">
+          <a href="vratya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Vratya</h3>
+            </article>
+          </a>
+          <a href="pasupata.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Pasupata</h3>
+            </article>
+          </a>
+          <a href="sicarius.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Sicarii</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="kapalika.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kapalika</h3>
+            </article>
+          </a>
+          <a href="kalamukha.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kalamukha</h3>
+            </article>
+          </a>
+          <a href="lingayat-virashaiva.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Lingayat / Virashaiva</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-iyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘iyya</h3>
+            </article>
+          </a>
+          <a href="qalandariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Qalandariyya</h3>
+            </article>
+          </a>
+          <a href="thugs.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Thugs</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="haydariyya-jawbariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Haydariyya / Jawbariyya</h3>
+            </article>
+          </a>
+          <a href="khalwatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Khalwatiyya</h3>
+            </article>
+          </a>
+          <a href="malmatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malmatiyya</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="madariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Madariyya</h3>
+            </article>
+          </a>
+          <a href="nath-yogis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Nath Yogis</h3>
+            </article>
+          </a>
+          <a href="dasanami-naga-sannyasi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Dasanami Naga Sannyasi</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="gosain-bairagi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Gosain & Bairagi</h3>
+            </article>
+          </a>
+          <a href="satnamis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Satnamis</h3>
+            </article>
+          </a>
+          <a href="chhinnamasta.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Chhinnamasta Sadhaks</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-i-al-qubur.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘i al-qubur</h3>
+            </article>
+          </a>
+          <a href="aghori.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Aghori</h3>
+            </article>
+          </a>
+          <a href="malangs-jalali-haydari.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malangs jalali & Haydari</h3>
+            </article>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+  <div class="container" style="text-align:center; font-size:14px; padding:40px 0">
+    <div>
+      <a href="index.html" style="color:#e8d9b8; text-decoration:none; border-bottom:1px solid transparent; transition:border-bottom 0.3s;">
+        Warrior Ascetics, Criminals and Outcasts
+      </a>
+    </div>
+    <div style="margin-top:8px">© 2002</div>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>

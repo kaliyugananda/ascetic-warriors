@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warrior Ascetics, Criminals and Outcasts</title>
+  <meta name="description" content="Prototype website about marginal and warrior ascetics." />
+
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#0f0f10;
+      --panel:#111214;
+      --muted:#9aa0a6;
+      --accent:#c86b3a;
+      --ivory:#f6efe6;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1200px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+        url('assets/img/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--ivory);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+    /* Title block */
+    .titleBlock {
+      margin: 50px auto;
+      max-width: var(--maxw);
+      background: rgba(0,0,0,0.44);
+      border: 1px solid #d87b3e;
+      border-radius: 16px;
+      padding: 40px 70px 70px 70px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .introText {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .introText strong.safran {
+      font-family: "Aref Ruqaa", "Cinzel", Georgia, serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.9);
+      display: block;
+      margin: 0;
+    }
+
+    .titlePrefix {
+      color: #ff0000;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .titleSuffix {
+      color: #d87b3e; 
+      font-size: 36px;
+      padding-bottom: 30px;
+      display: block;
+    }
+
+    .introText p {
+      font-size: 17.2px;
+      line-height: 1.76;
+      color: #e8d9b8;
+      margin: 0;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+    .card {
+      text-align: center;
+      padding: 16px 16px 0px;
+      background: #210202 !important;
+      border: 0.5px solid #d87b3e;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: #f49e5c;
+      transform: translateY(-4px);
+    }
+    .card .thumb {
+      height: 240px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 14px;
+    }
+
+    /* Footer */
+    footer, footer * { color: #e8d9b8 !important; }
+    footer a:hover {
+      border-bottom: 1px solid #d87b3e;
+    }
+
+    /* Responsive */
+    @media (max-width:1000px) {
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .titlePrefix { font-size: 38px; }
+      .titleSuffix { font-size: 30px; }
+      .introText p { font-size: 16px; }
+    }
+
+    @media (max-width:640px) {
+      .grid { grid-template-columns: 1fr; }
+      .titleBlock { padding: 36px 32px 50px 32px; border-radius: 14px; }
+      .titlePrefix { font-size: 32px; }
+      .titleSuffix { font-size: 26px; }
+      .introText p { font-size: 15px; line-height: 1.68; }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="titleBlock" id="map">
+      <div class="introText">
+        <strong class="safran titlePrefix">SHUGENDO YAMABUSHI</strong>
+        <p><br>
+          Since the 8th century, in the sacred mountains of Japan, a syncretic tradition of terrifying warrior asceticism has flourished: Shugendō, practiced by the yamabushi (“those who sleep in the mountains”). A fusion of Shinto, esoteric Buddhism, Taoism, and ancient shamanism, Shugendō transforms wild nature into a proving ground where the ascetic confronts death, cold, hunger, and spirits to acquire supernatural powers.</p><br>
+
+        <p>Their history is one of absolute marginality: yamabushi live as hermits in inaccessible massifs (Kii, Dewa Sanzan, Omine), rejecting the profane world for a brutal communion with the kami and primordial forces. Their training is a war against the body: hundreds of kilometers of marching in straw sandals at –30°C, prolonged fasts leading to hallucination, meditation under icy waterfalls for hours, ritual live burials to simulate death and rebirth.</p><br>
+
+        <p>The darkness of Shugendō lies in its extreme physical ordeals: some yamabushi practice the “kaihōgyō” of Mount Hiei – 1,000 days of marathon walking in white robes, with the obligation of ritual suicide (seppuku) in case of abandonment. Others chain themselves to rocks at the edge of precipices or meditate in caves haunted by the spirits of the dead. Their body becomes a field of suffering: bloodied blisters, frostbite, dehydration—everything is accepted as an offering to the mountain deities.</p><br>
+
+        <p>Their warrior dimension is historical: in the Middle Ages, yamabushi formed armed bands protecting their sanctuaries or serving as mercenaries (sōhei). They mastered martial arts, violent exorcisms, and magical talismans. Even today, during major retreats, they can be seen marching while blowing conch shells, ritual weapons in hand, faces blackened with soot, embodying the tengu—mountain demons half-bird, half-human.</p><br>
+
+        <p>Still active and recognized in contemporary Japan, the yamabushi perpetuate an asceticism that flirts with death: some still die of exhaustion during the great marches. Their path reminds us that enlightenment may demand a naked confrontation with the elements, where the body must be broken so that the spirit can merge with the primordial savagery of nature and spirits.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+
+        <div class="grid">
+          <a href="vratya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Vratya</h3>
+            </article>
+          </a>
+          <a href="pasupata.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Pasupata</h3>
+            </article>
+          </a>
+          <a href="sicarius.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Sicarii</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="kapalika.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kapalika</h3>
+            </article>
+          </a>
+          <a href="kalamukha.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kalamukha</h3>
+            </article>
+          </a>
+          <a href="lingayat-virashaiva.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Lingayat / Virashaiva</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-iyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘iyya</h3>
+            </article>
+          </a>
+          <a href="qalandariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Qalandariyya</h3>
+            </article>
+          </a>
+          <a href="thugs.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Thugs</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="haydariyya-jawbariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Haydariyya / Jawbariyya</h3>
+            </article>
+          </a>
+          <a href="khalwatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Khalwatiyya</h3>
+            </article>
+          </a>
+          <a href="malmatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malmatiyya</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="madariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Madariyya</h3>
+            </article>
+          </a>
+          <a href="nath-yogis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Nath Yogis</h3>
+            </article>
+          </a>
+          <a href="dasanami-naga-sannyasi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Dasanami Naga Sannyasi</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="gosain-bairagi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Gosain & Bairagi</h3>
+            </article>
+          </a>
+          <a href="satnamis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Satnamis</h3>
+            </article>
+          </a>
+          <a href="chhinnamasta.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Chhinnamasta Sadhaks</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-i-al-qubur.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘i al-qubur</h3>
+            </article>
+          </a>
+          <a href="aghori.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Aghori</h3>
+            </article>
+          </a>
+          <a href="malangs-jalali-haydari.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malangs jalali & Haydari</h3>
+            </article>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+  <div class="container" style="text-align:center; font-size:14px; padding:40px 0">
+    <div>
+      <a href="index.html" style="color:#e8d9b8; text-decoration:none; border-bottom:1px solid transparent; transition:border-bottom 0.3s;">
+        Warrior Ascetics, Criminals and Outcasts
+      </a>
+    </div>
+    <div style="margin-top:8px">© 2002</div>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warrior Ascetics, Criminals and Outcasts</title>
+  <meta name="description" content="Prototype website about marginal and warrior ascetics (Aghori, Naga Babas, Nath Yogis)." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#0f0f10;
+      --panel:#111214;
+      --muted:#9aa0a6;
+      --accent:#c86b3a;
+      --ivory:#f6efe6;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1200px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+        url('assets/img/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--ivory);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+    /* Title block */
+    .titleBlock {
+      margin: 50px auto;
+      max-width: var(--maxw);
+      background: rgba(0,0,0,0.44);
+      border: 1px solid #d87b3e;
+      border-radius: 16px;
+      padding: 40px 70px 70px 70px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .introText {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .introText strong.safran {
+      font-family: "Aref Ruqaa", "Cinzel", Georgia, serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.9);
+      display: block;
+      margin: 0;
+    }
+
+    .titlePrefix {
+      color: #ff0000;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .titleSuffix {
+      color: #d87b3e; 
+      font-size: 36px;
+      padding-bottom: 30px;
+      display: block;
+    }
+
+    .introText p {
+      font-size: 17.2px;
+      line-height: 1.76;
+      color: #e8d9b8;
+      margin: 0;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+    .card {
+      text-align: center;
+      padding: 16px 16px 0px;
+      background: #210202 !important;
+      border: 0.5px solid #d87b3e;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: #f49e5c;
+      transform: translateY(-4px);
+    }
+    .card .thumb {
+      height: 240px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 14px;
+    }
+
+    /* Footer */
+    footer, footer * { color: #e8d9b8 !important; }
+    footer a:hover {
+      border-bottom: 1px solid #d87b3e;
+    }
+
+    /* Responsive */
+    @media (max-width:1000px) {
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .titlePrefix { font-size: 38px; }
+      .titleSuffix { font-size: 30px; }
+      .introText p { font-size: 16px; }
+    }
+
+    @media (max-width:640px) {
+      .grid { grid-template-columns: 1fr; }
+      .titleBlock { padding: 36px 32px 50px 32px; border-radius: 14px; }
+      .titlePrefix { font-size: 32px; }
+      .titleSuffix { font-size: 26px; }
+      .introText p { font-size: 15px; line-height: 1.68; }
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Title block -->
+  <div class="container">
+    <div class="titleBlock" id="map">
+      <div class="introText">
+        <strong class="safran titlePrefix">KAPALIKA</strong>
+        <p><br>
+          The Kāpālika emerged at the heart of medieval India, between the 6th and 10th centuries CE, as one of the most extreme and sinister expressions of tantric Shaivism. Their name, derived from kapāla – the human skull – immediately evokes their emblematic practice: carrying and using a skull as a ritual bowl for offerings and consumption. These ascetics, often described in Sanskrit texts such as the Purāṇas, court dramas, and philosophical commentaries, embody a spiritual path where deliberate transgression of social and ritual norms becomes the privileged means of attaining union with Śiva in his most terrifying aspect, Bhairava, the bloodthirsty destroyer and master of cremation grounds.<br><br>
+          
+          The history of the Kāpālika is inscribed in the obscure strata of post-Vedic India, where the revelations of the Āgamas and Tantras inspire a raw and merciless devotion. Although their legendary founder remains shrouded in mystery—some texts link them to Lakulīśa or anonymous siddhas—their presence is attested from the 6th century in inscriptions and literary accounts. They flourished in the Deccan, Kashmir, and Bengal regions, where their practices attracted both the fascination of tantric elites and the horror of orthodox brahmins. Sanskrit dramas such as the Mattavilāsa by Mahendravarman or the Prabodhacandrodaya by Kṛṣṇamiśra depict them as grotesque and fearsome figures, wandering naked and covered in ashes, defying conventions to imitate the divine savagery of Bhairava.<br><br>
+          
+          At the center of their asceticism lies a total immersion in the darkness of death and transgression, transforming the body into a living altar for the destructive forces of Śiva. The Kāpālika meditated in charnel grounds and cremation fields, anointing themselves with human fat or ashes from funeral pyres to absorb the essence of decomposition. This use of the human skull—taken from unburned or partially decomposed corpses—symbolizes the absorption of death itself, a necrophagous communion aimed at dissolving the ego in the cosmic abyss. Their ritual nudity, often accompanied by necklaces of bones and bodily markings made of blood or ashes mixed with human fluids, accentuated this plunge into abjection: they presented themselves as living incarnations of Bhairava, the god who dances on corpses and drinks the blood of illusions.<br><br>
+          
+          The darkest practices of the Kāpālika crossed the boundaries of the imaginable, blending ritual violence and sexual transgression in a quest for accelerated illumination. Tantric texts and hostile accounts accuse them of human sacrifices—real or symbolic—offered to Bhairava to obtain supernatural powers, an accusation that, even if exaggerated by their detractors, reflects the reality of rites involving blood and human remains. Their sādhanā included acts of consuming impurities: raw meat, alcohol, urine, and excrement, sometimes mixed with bodily fluids from ritual partners in unconventional tantric unions. These transgressions, practiced in the darkness of cemeteries under the new moon, aimed to shatter moral dualities and realize non-duality through direct experience of the impure. The violence was not only self-inflicted—scarifications, extreme fasts, exposure to the elements—but sometimes directed outward: accounts report confrontations with religious authorities, where the Kāpālika, armed only with their fervor, defied brahmins through provocative acts, sowing chaos to impose their vision of raw and merciless devotion.<br><br>
+          
+          This ritual darkness, far from being gratuitous perversion, fits within a tantric theology where the impure becomes the vehicle of the sacred. The Kāpālika held that only immersion in darkness—death, decomposition, transgression—could transcend the pāśa, the cosmic bonds that fetter the soul. Their somber legacy irrigated later tantric currents, directly influencing the Aghori and Nāth Yogis, where necrophagous meditation and ascetic violence persist as echoes of their quest. Contemporary studies highlight this duality: a sect that, through its immersion in horror, contributed to the evolution of tantric Shaivism, transforming death into a nectar of illumination. The Kāpālika, these skull-bearers wandering in the shadows of the charnel grounds, remind us that the spiritual path can plunge into the deepest abysses, where destruction becomes the road to the eternal.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+
+        <div class="grid">
+          <a href="vratya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Vratya</h3>
+            </article>
+          </a>
+          <a href="pasupata.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Pasupata</h3>
+            </article>
+          </a>
+          <a href="sicarius.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Sicarii</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+
+            <article class="card active">
+              <div class="thumb" style="background-image:url('assets/img/skull-02.jpg')"></div>
+              <h3>Kapalika</h3>
+            </article>
+
+          <a href="kalamukha.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kalamukha</h3>
+            </article>
+          </a>
+          <a href="lingayat-virashaiva.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Lingayat / Virashaiva</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-iyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘iyya</h3>
+            </article>
+          </a>
+          <a href="qalandariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Qalandariyya</h3>
+            </article>
+          </a>
+          <a href="thugs.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Thugs</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="haydariyya-jawbariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Haydariyya / Jawbariyya</h3>
+            </article>
+          </a>
+          <a href="khalwatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Khalwatiyya</h3>
+            </article>
+          </a>
+          <a href="malmatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malmatiyya</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="madariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Madariyya</h3>
+            </article>
+          </a>
+          <a href="nath-yogis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Nath Yogis</h3>
+            </article>
+          </a>
+          <a href="dasanami-naga-sannyasi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Dasanami Naga Sannyasi</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="gosain-bairagi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Gosain & Bairagi</h3>
+            </article>
+          </a>
+          <a href="satnamis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Satnamis</h3>
+            </article>
+          </a>
+          <a href="chhinnamasta.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Chhinnamasta Sadhaks</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-i-al-qubur.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘i al-qubur</h3>
+            </article>
+          </a>
+          <a href="aghori.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Aghori</h3>
+            </article>
+          </a>
+          <a href="malangs-jalali-haydari.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malangs jalali & Haydari</h3>
+            </article>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+  <div class="container" style="text-align:center; font-size:14px; padding:40px 0">
+    <div>
+      <a href="index.html" style="color:#e8d9b8; text-decoration:none; border-bottom:1px solid transparent; transition:border-bottom 0.3s;">
+        Warrior Ascetics, Criminals and Outcasts
+      </a>
+    </div>
+    <div style="margin-top:8px">© 2002</div>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>

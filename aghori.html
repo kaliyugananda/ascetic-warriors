@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warrior Ascetics, Criminals and Marginals</title>
+  <meta name="description" content="Prototype website on marginal and warrior ascetics (Aghori, Naga Babas, Nath Yogis)." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700;800&display=swap" rel="stylesheet">
+
+   <style>
+    :root {
+      --bg:#0f0f10;
+      --panel:#111214;
+      --muted:#9aa0a6;
+      --accent:#c86b3a;
+      --ivory:#f6efe6;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1200px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+        url('assets/img/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--ivory);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+    /* Title block */
+    .titleBlock {
+      margin: 50px auto;
+      max-width: var(--maxw);
+      background: rgba(0,0,0,0.44);
+      border: 1px solid #d87b3e;
+      border-radius: 16px;
+      padding: 40px 70px 70px 70px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .introText {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .introText strong.safran {
+      font-family: "Aref Ruqaa", "Cinzel", Georgia, serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.9);
+      display: block;
+      margin: 0;
+    }
+
+    .titlePrefix {
+      color: #ff0000;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .titleSuffix {
+      color: #d87b3e; 
+      font-size: 36px;
+      padding-bottom: 30px;
+      display: block;
+    }
+
+    .introText p {
+      font-size: 17.2px;
+      line-height: 1.76;
+      color: #e8d9b8;
+      margin: 0;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+    .card {
+      text-align: center;
+      padding: 16px 16px 0px;
+      background: #210202 !important;
+      border: 0.5px solid #d87b3e;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: #f49e5c;
+      transform: translateY(-4px);
+    }
+    .card .thumb {
+      height: 240px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 14px;
+    }
+
+    /* Footer */
+    footer, footer * { color: #e8d9b8 !important; }
+    footer a:hover {
+  border-bottom: 1px solid #d87b3e;
+}
+
+    /* Responsive */
+    @media (max-width:1000px) {
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .titlePrefix { font-size: 38px; }
+      .titleSuffix { font-size: 30px; }
+      .introText p { font-size: 16px; }
+    }
+
+    @media (max-width:640px) {
+      .grid { grid-template-columns: 1fr; }
+      .titleBlock { padding: 36px 32px 50px 32px; border-radius: 14px; }
+      .titlePrefix { font-size: 32px; }
+      .titleSuffix { font-size: 26px; }
+      .introText p { font-size: 15px; line-height: 1.68; }
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Title block -->
+  <div class="container">
+    <div class="titleBlock" id="map">
+      <div class="introText">
+        <strong class="safran titlePrefix">AGHORI</strong>
+        <p><br>
+          At the heart of the mystical mists enveloping the banks of the Ganges, where life and death dance an eternal ballet, emerges an enigmatic and terrifying figure: the Aghori. These Shaivite ascetics, wandering in the shadows of the ghats of Varanasi, embody a spiritual path so radical that it defies the very foundations of human society. Their existence, woven with rituals that skirt the abyss of horror, invites us to plunge into the depths of Hindu faith, where the quest for enlightenment transcends the barriers of good and evil, pure and impure. To understand these guardians of darkness, one must trace back to the ancient roots of their tradition, a lineage forged in the fire of forgotten tantric practices.<br><br>
+
+          The history of the Aghori is rooted in the mists of medieval India, between the 4th and 8th centuries CE, when the tradition of the Kāpālika emerged—ascetics who wore human skulls as ornaments and engaged in non-Puranic rites of tantric Shaivism. This sect, often depicted in ancient texts as a rebellious and antinomian current, deeply influenced the Aghori, who are its sole survivors. Originating in medieval India, they draw their essence from an unconventional Shaivism, where Shiva, in his fierce forms of Bhairava or Mahākāla, reigns supreme. The founding figure of Baba Keenaram, an ascetic of the 18th century said to have lived over one hundred and fifty years, marks a decisive turning point. Buried in Varanasi, where a temple still bears his name, he is considered the pillar of the modern lineage. According to legend, Dattatreya, the divine avadhuta embodying the union of Brahma, Vishnu, and Shiva, appeared to Keenaram on Mount Girnar in Gujarat, offering him a piece of his own flesh as prasād, thus sealing a guru-disciple bond that infuses their philosophy with carnal mysticism. This symbolic encounter, where the deity offers itself as food, foreshadows the darkest practices of the Aghori, who see Dattatreya as the supreme guide toward liberation from the cycle of births and deaths.<br><br>
+
+          Beyond these mythical origins, the Aghori embrace a monistic philosophy that proclaims the illusion of all dualities. For them, the ātman, the individual soul, is none other than the eternal, formless Brahman, and oppositions between sacred and profane, life and death, are mere veils imposed by human ignorance. By breaking social taboos, they aim to attain advaita, non-duality, where the ascetic perceives the universe as an indivisible unity. This quest leads them to reside in charnel grounds—the cremation sites where the flames of funeral pyres light up the night—and to invoke goddesses such as Smashan Tara or Bagalamukhi to acquire supernatural powers. Their veneration of Shakti, the divine feminine force in the form of Kali, the goddess of death, reinforces this vision in which destruction is the prelude to spiritual rebirth. Yet it is in the most obscure aspects of their way of life that the essence of their sacred terror resides—an shadow that terrifies as much as it fascinates.<br><br>
+
+          The daily life of the Aghori is an immersion in primordial horror, a visceral rejection of the norms that govern humanity. They choose to dwell in cemeteries and cremation ghats, places where bodies dissolve into ashes, meditating seated upon decomposing corpses, thus confronting the ephemerality of flesh and the inevitability of death. This practice, known as shava sadhana, transforms the dead body into a living altar, a support for invocations aimed at mastering the deepest fears and dissolving earthly attachments. Smearing themselves with the ashes of the deceased, which they spread over their bare skin or scantily covered loincloth, they imitate Shiva covered in funeral dust, believing this layer protects them from disease and symbolizes the vanity of appearances. But it is their post-mortem cannibalism that chills the blood: they consume human flesh taken from corpses floating in the Ganges or stolen from pyres, eating it raw or roasted—not through murder but through opportunistic necrophagy. This ingestion, which they attribute to spiritual virtues such as slowing aging, serves to shatter the ego and affirm that nothing is impure, that the human body is merely an illusory envelope. Witnesses, such as an Indian television crew in 2006, have reported scenes of an Aghori devouring a corpse by the riverbank—an act that defies moral and hygienic laws of society.<br><br>
+
+          Pushing abjection further, Aghori drink their own urine and ingest excrement, rituals intended to annihilate notions of disgust and beauty, purging the mind of sensory illusions. They craft jewelry from human bones and use skulls—kapala—as bowls for eating or drinking, often filling them with alcohol or cannabis smoked heavily, substances that alter consciousness and facilitate visions of cosmic unity. Naked or nearly so, they wander without shame, renouncing modesty as well as material possessions, and share their food with stray animals, underscoring the equality of all forms of life. These acts, which sometimes include intimate relations with corpses in extreme tantric rites, aim to transcend the fear of death and embrace the primordiality of existence, reminding us that the human being is born Aghori—innocent and without discrimination—before society imposes its chains.<br><br>
+
+          In modern perceptions, the Aghori oscillate between reverence and rejection. Venerated in rural areas for their healing powers acquired through asceticism and renunciation, they are often portrayed as outcasts in literature and media, their practices clashing with orthodox Hinduism. Yet their numbers remain modest, a few thousand scattered across Uttar Pradesh and beyond, preserving a tradition that, though shocking, questions the limits of human spirituality. In Varanasi, where the Ganges carries the secrets of ages, the Aghori remind us that enlightenment can emerge from the deepest darkness—a path paved with corpses and ashes where divine light arises from horror itself.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <main>
+    <section class="hero">
+      <div class="container">
+
+        <div class="grid">
+          <a href="vratya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Vratya</h3>
+            </article>
+          </a>
+          <a href="pasupata.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Pashupata</h3>
+            </article>
+          </a>
+          <a href="sicarius.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Sicarii</h3>
+            </article>
+          </a>
+        </div>
+
+        <div class="grid">
+          <a href="kapalika.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kapalika</h3>
+            </article>
+          </a>
+          <a href="kalamukha.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kalamukha</h3>
+            </article>
+          </a>
+          <a href="lingayat-virashaiva.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Lingayat / Virashaiva</h3>
+            </article>
+          </a>
+        </div>
+
+        <div class="grid">
+          <a href="rifa-iyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘iyya</h3>
+            </article>
+          </a>
+          <a href="qalandariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Qalandariyya</h3>
+            </article>
+          </a>
+          <a href="thugs.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Thugs</h3>
+            </article>
+          </a>
+        </div>
+
+        <div class="grid">
+          <a href="haydariyya-jawbariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Haydariyya / Jawbariyya</h3>
+            </article>
+          </a>
+          <a href="khalwatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Khalwatiyya</h3>
+            </article>
+          </a>
+          <a href="malmatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malmatiyya</h3>
+            </article>
+          </a>
+        </div>
+
+        <div class="grid">
+          <a href="madariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Madariyya</h3>
+            </article>
+          </a>
+          <a href="nath-yogis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Nath Yogis</h3>
+            </article>
+          </a>
+          <a href="dasanami-naga-sannyasi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Dasanami Naga Sannyasi</h3>
+            </article>
+          </a>
+        </div>
+
+        <div class="grid">
+          <a href="gosain-bairagi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Gosain & Bairagi</h3>
+            </article>
+          </a>
+          <a href="satnamis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Satnamis</h3>
+            </article>
+          </a>
+          <a href="chhinnamasta.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Chhinnamasta Sadhaks</h3>
+            </article>
+          </a>
+        </div>
+
+        <div class="grid">
+          <a href="rifa-i-al-qubur.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘i al-qubur</h3>
+            </article>
+          </a>
+          <article class="card active">
+            <div class="thumb" style="background-image:url('assets/img/skull-02.jpg')"></div>
+            <h3>Aghori</h3>
+          </article>
+          <a href="malangs-jalali-haydari.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malangs Jalali & Haydari</h3>
+            </article>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+  <div class="container" style="text-align:center; font-size:14px; padding:40px 0">
+    <div>
+      <a href="index.html" style="color:#e8d9b8; text-decoration:none; border-bottom:1px solid transparent; transition:border-bottom 0.3s;">
+        Warrior Ascetics, Criminals and Outcasts
+      </a>
+    </div>
+    <div style="margin-top:8px">© 2002</div>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>

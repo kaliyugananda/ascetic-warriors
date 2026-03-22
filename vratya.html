@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warrior Ascetics, Criminals and Outcasts</title>
+  <meta name="description" content="Prototype website about marginal and warrior ascetics." />
+
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#0f0f10;
+      --panel:#111214;
+      --muted:#9aa0a6;
+      --accent:#c86b3a;
+      --ivory:#f6efe6;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1200px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+        url('assets/img/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--ivory);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+    /* Title block */
+    .titleBlock {
+      margin: 50px auto;
+      max-width: var(--maxw);
+      background: rgba(0,0,0,0.44);
+      border: 1px solid #d87b3e;
+      border-radius: 16px;
+      padding: 40px 70px 70px 70px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .introText {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .introText strong.safran {
+      font-family: "Aref Ruqaa", "Cinzel", Georgia, serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.9);
+      display: block;
+      margin: 0;
+    }
+
+    .titlePrefix {
+      color: #ff0000;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .titleSuffix {
+      color: #d87b3e; 
+      font-size: 36px;
+      padding-bottom: 30px;
+      display: block;
+    }
+
+    .introText p {
+      font-size: 17.2px;
+      line-height: 1.76;
+      color: #e8d9b8;
+      margin: 0;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+    .card {
+      text-align: center;
+      padding: 16px 16px 0px;
+      background: #210202 !important;
+      border: 0.5px solid #d87b3e;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: #f49e5c;
+      transform: translateY(-4px);
+    }
+    .card .thumb {
+      height: 240px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 14px;
+    }
+
+    /* Footer */
+    footer, footer * { color: #e8d9b8 !important; }
+    footer a:hover {
+      border-bottom: 1px solid #d87b3e;
+    }
+
+    /* Responsive */
+    @media (max-width:1000px) {
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .titlePrefix { font-size: 38px; }
+      .titleSuffix { font-size: 30px; }
+      .introText p { font-size: 16px; }
+    }
+
+    @media (max-width:640px) {
+      .grid { grid-template-columns: 1fr; }
+      .titleBlock { padding: 36px 32px 50px 32px; border-radius: 14px; }
+      .titlePrefix { font-size: 32px; }
+      .titleSuffix { font-size: 26px; }
+      .introText p { font-size: 15px; line-height: 1.68; }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="titleBlock" id="map">
+      <div class="introText">
+        <strong class="safran titlePrefix">VRATYA</strong><br>
+
+        <p>The Vratyas (to be strictly distinguished from the <a href="agni-vratya.html" target="_blank">Agni-Vratyas</a>) occupy an enigmatic and profoundly sinister position within late Vedic literature, particularly in the <strong>Atharvaveda</strong> (Book XV, known as the <strong>Vrātya-kāṇḍa</strong>), as well as in certain passages of the Brāhmaṇas and Śrautasūtras. These nomadic bands of warrior-ascetics, living on the extreme margins of orthodox Brahmanical society, embody a primitive and dark form of Indo-Aryan spirituality in which rigorous asceticism merges with unrestrained ritual violence, deliberate transgression, and threatening social marginality.</p><br>
+
+        <p>Their close association with <strong>Rudra</strong> — a fierce, destructive deity who dispenses disease, death, and cosmic chaos, foreshadowing the terrible and ascetic Shiva of later traditions — endows them with a particularly ominous aura: shamanic ecstasy verging on demonic possession, sacred intoxication pushed to furious trance, and a ritual aggressiveness that inspires terror and ambivalent fascination among Vedic priests.</p><br>
+
+        <p>Chronologically, the Vratyas emerge during the late Vedic period (approximately 1000–600 BCE), at a time when Indo-Aryans were progressively settling in the Gangetic plains, yet marginal violent currents persisted. The texts depict them as wanderers (<strong>vrātya</strong>: devoted to a dark ritual vow), often young men without initiation (<strong>anupānayana</strong>), violently rejecting śrauta sacrifices and Brahmanical domestic norms. This radical rejection excludes them: they are described as <strong>ayajñiya</strong> (unworthy of sacrifice), <strong>anūcya</strong> or <strong>avedavid</strong> (unlearned in the Vedas), <strong>avrata</strong> or <strong>anyavrata</strong> (without Vedic ritual observances — a qualifier shared with the Dasyu of the Rig-Veda for their rejection of rites and Ṛta), and likened to <strong>mleccha</strong> (impure barbarians) in later sources. This ritual exclusion renders them not only invisible to the orthodox sacrificial circle but potentially polluting and dangerous — a ritual and physical threat to Brahmanical order.</p><br>
+
+        <p>The darkest aspect of the Vratyas lies in their sacred violence and deliberate transgression, which reinforce their liminal and menacing status. The <strong>Atharvaveda</strong> (Vrātya-kāṇḍa) portrays them as armed hordes, long-haired, intoxicated by soma to the point of destructive madness, performing ecstatic rites that evoke demonic possession or uncontrollable rage. Their central figure, the <strong>Eka-vratya</strong>, is exalted as a cosmic/divine incarnation (often identified with Rudra or proto-Shiva), master of chaotic forces, furious winds, and deadly directions. His companions, described as hybrid or frenzied beings, impose a ritual “tax” on villages under threat of curses, physical violence, or maledictions — a practice bordering on sacred banditry and foreshadowing the exactions of later warrior-ascetics.</p><br>
+
+        <p>Their intoxication plunges them into convulsive trances, bestial howls, and annihilating dances, where divine ecstasy dissolves into destructive fury. Rudra, their tutelary deity, is invoked as an implacable archer sowing plague, madness, and death — the Vratyas thus become living instruments of cosmic vengeance against the “impious” (including orthodox Brahmans). Sources such as the Baudhāyana-Śrautasūtra (XVIII 24) and Jaiminīya-Brāhmaṇa (II 225) explicitly accuse the Vratyas of injuring the <strong>ahiṃsya brāhmaṇa</strong> (the untouchable Brahman), beating the <strong>adaṇḍya</strong> (the one who must not be struck) with a staff, or harassing chiefs and priests to plunder them — a targeted aggressiveness that crosses from ritual into taboo social violence.</p><br>
+
+        <p>This violence is rooted in a dark ascetic quest: nocturnal confrontation with chthonic forces, extreme fasting, bloody ritual combats, and blood-sealed alliance with Rudra. Their radical marginality — rejection of ritualized celibacy, agriculture, and Brahmanical sacrifices — transforms them into chaotic disruptors, threatening Vedic order through contagious impurity and destructive potential.</p><br>
+
+        <p>The existence of the purification ritual called <strong>Vrātyastoma</strong> (detailed in Śrautasūtras and Brāhmaṇas such as Pañcaviṃśa/Tāṇḍya) proves this sinister status: a complex ceremony aimed at retroactively granting the missing initiation, purifying their dangerous liminal state, and making them (barely) eligible for Vedic sacrifice. Without this exceptional rite, they remain excluded, ritually impure, socially suspect, and potentially malevolent.</p><br>
+
+        <p>This controlled marginalization reflects a Brahmanical strategy toward an internal threat: declaring these figures ritually “invisible” or polluting while leaving a narrow door for reintegration. It foreshadows the exclusion applied later to heterodox Shaivite currents (Pāśupata, Kāpālika), themselves marked by transgression, extreme asceticism, and sacred violence. Modern scholarship highlights this dark duality: the Vratyas as proto-Shaivite warrior-ascetics, rooted in a pre-classical asceticism where ecstasy, ritual violence, and cosmic chaos intertwine — essential, yet shadowy, to the evolution of India’s obscure ascetic traditions. Their legacy permeates later Shaivite movements from the Pāśupata to the Kāpālika and medieval Naga Sadhus, reminding us that the deepest roots of Indian asceticism often plunge into the darkness of sacred violence, where the warrior-ascetic defies death and order to embrace divine chaos.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+
+        <div class="grid">
+
+            <article class="card active">
+              <div class="thumb" style="background-image:url('assets/img/skull-02.jpg')"></div>
+              <h3>Vratya</h3>
+            </article>
+
+          <a href="pasupata.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Pasupata</h3>
+            </article>
+          </a>
+          <a href="sicarius.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Sicarii</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="kapalika.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kapalika</h3>
+            </article>
+          </a>
+          <a href="kalamukha.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kalamukha</h3>
+            </article>
+          </a>
+          <a href="lingayat-virashaiva.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Lingayat / Virashaiva</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-iyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘iyya</h3>
+            </article>
+          </a>
+          <a href="qalandariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Qalandariyya</h3>
+            </article>
+          </a>
+          <a href="thugs.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Thugs</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="haydariyya-jawbariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Haydariyya / Jawbariyya</h3>
+            </article>
+          </a>
+          <a href="khalwatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Khalwatiyya</h3>
+            </article>
+          </a>
+          <a href="malmatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malmatiyya</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="madariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Madariyya</h3>
+            </article>
+          </a>
+          <a href="nath-yogis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Nath Yogis</h3>
+            </article>
+          </a>
+          <a href="dasanami-naga-sannyasi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Dasanami Naga Sannyasi</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="gosain-bairagi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Gosain & Bairagi</h3>
+            </article>
+          </a>
+          <a href="satnamis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Satnamis</h3>
+            </article>
+          </a>
+          <a href="chhinnamasta.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Chhinnamasta Sadhaks</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-i-al-qubur.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘i al-qubur</h3>
+            </article>
+          </a>
+          <a href="aghori.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Aghori</h3>
+            </article>
+          </a>
+          <a href="malangs-jalali-haydari.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malangs jalali & Haydari</h3>
+            </article>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+  <div class="container" style="text-align:center; font-size:14px; padding:40px 0">
+    <div>
+      <a href="index.html" style="color:#e8d9b8; text-decoration:none; border-bottom:1px solid transparent; transition:border-bottom 0.3s;">
+        Warrior Ascetics, Criminals and Outcasts
+      </a>
+    </div>
+    <div style="margin-top:8px">© 2002</div>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
