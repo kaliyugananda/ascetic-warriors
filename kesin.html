@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warrior Ascetics, Criminals and Outcasts</title>
+  <meta name="description" content="Prototype website about marginal and warrior ascetics." />
+
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#0f0f10;
+      --panel:#111214;
+      --muted:#9aa0a6;
+      --accent:#c86b3a;
+      --ivory:#f6efe6;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1200px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+        url('assets/img/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--ivory);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+    /* Title block */
+    .titleBlock {
+      margin: 50px auto;
+      max-width: var(--maxw);
+      background: rgba(0,0,0,0.44);
+      border: 1px solid #d87b3e;
+      border-radius: 16px;
+      padding: 40px 70px 70px 70px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .introText {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .introText strong.safran {
+      font-family: "Aref Ruqaa", "Cinzel", Georgia, serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.9);
+      display: block;
+      margin: 0;
+    }
+
+    .titlePrefix {
+      color: #ff0000;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .titleSuffix {
+      color: #d87b3e; 
+      font-size: 36px;
+      padding-bottom: 30px;
+      display: block;
+    }
+
+    .introText p {
+      font-size: 17.2px;
+      line-height: 1.76;
+      color: #e8d9b8;
+      margin: 0;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+    .card {
+      text-align: center;
+      padding: 16px 16px 0px;
+      background: #210202 !important;
+      border: 0.5px solid #d87b3e;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: #f49e5c;
+      transform: translateY(-4px);
+    }
+    .card .thumb {
+      height: 240px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 14px;
+    }
+
+    /* Footer */
+    footer, footer * { color: #e8d9b8 !important; }
+    footer a:hover {
+      border-bottom: 1px solid #d87b3e;
+    }
+
+    /* Responsive */
+    @media (max-width:1000px) {
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .titlePrefix { font-size: 38px; }
+      .titleSuffix { font-size: 30px; }
+      .introText p { font-size: 16px; }
+    }
+
+    @media (max-width:640px) {
+      .grid { grid-template-columns: 1fr; }
+      .titleBlock { padding: 36px 32px 50px 32px; border-radius: 14px; }
+      .titlePrefix { font-size: 32px; }
+      .titleSuffix { font-size: 26px; }
+      .introText p { font-size: 15px; line-height: 1.68; }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="titleBlock" id="map">
+      <div class="introText">
+        <strong class="safran titlePrefix">KESIN</strong><br>
+
+        <p>The Keśin, whose name in Sanskrit means “the long-haired one,” are among the most enigmatic and fascinating figures of early Vedic literature. They appear primarily in a single hymn of the Rigveda, numbered X.136 and often called the Keśin Hymn or the Hymn of the Muni. This short yet dense poem, belonging to the late Vedic period around 1200–1000 BCE, presents them as wandering ascetics endowed with mystical powers who lived on the margins of Brahmanical ritual society. Scholars regard the hymn as the earliest literary evidence of proto-yogic practices and radical asceticism in India, offering a rare glimpse into a non-orthodox spiritual tradition centered on wandering, silence, and direct inner experience.</p><br>
+		
+		<p>The term keśin derives from keśa, “hair,” and designates one whose hair is long, unbound, or disheveled. While the word can elsewhere describe the manes of horses or luminous rays, in this hymn it clearly refers to human beings. The essential source remains Rigveda X.136. Later interpreters such as Yāska in the Nirukta sometimes read the figure allegorically as the Sun, yet modern scholarship consistently sees a description of real ascetics. Related figures known as munis and vrātyas in the Atharvaveda and Brāhmaṇas help situate the Keśin within a broader continuum of marginal spiritual life.</p><br>
+		
+		<p>The hymn portrays the Keśin, also called munis or silent sages, in vivid poetic terms. They are homeless wanderers who travel with the wind and feel equally at home in the physical and spiritual worlds. Their appearance is unconventional: long unbound hair, clothing reduced to soiled rags of piśaṅga color—tawny, ochre, yellowish-brown or reddish-brown—or simply clad in dust. The expression “girdled by the wind” suggests near-nakedness or complete detachment from ordinary dress. They possess striking powers: they bear within themselves fire, poison or moisture, heaven and earth; they move through the air; they behold all forms and associate freely with Gandharvas, Apsarases, and wild animals. Most significantly, they stand in close relation to Rudra. In the final stanza the Keśin drinks from the same cup as Rudra a beverage described as poisonous to ordinary mortals, an image variously understood as an entheogenic substance, a symbol of transcendent power, or a metaphor for ecstatic experience. One famous verse places words in their mouths: exalted by their state of muni-hood they have mounted the winds, while mortals see only their physical bodies.</p><br>
+		
+		<p>These long-haired ascetics lived as solitary figures or in small groups of wanderers. Unlike the ṛṣis, the settled sage-poets who composed Vedic hymns, they belonged to the muni tradition of silence, meditation, renunciation, and immediate experience. They maintained friendly relations with the natural elements, the gods, animals, and human beings, emphasizing cosmic harmony rather than withdrawal from the world. Their way of life anticipates the later ideal of the wandering renunciant that developed in the Upaniṣads, Buddhism, Jainism, and Śaiva traditions. The association with Rudra, an ambivalent deity who would later become Śiva, is especially important, for it foreshadows the more extreme practices linked to the fierce aspects of the god.</p><br>
+		
+		<p>The Keśin share many traits with the <a href="vratya.html" target="_blank">Vrātyas</a>, mobile brotherhoods of marginal or temporary men described in the Atharvaveda and Brāhmaṇas. These groups often wore long hair, were connected with Rudra, and occupied a liminal social and ritual position. Scholars such as Heesterman, Falk, Pontillo, and Dore have noted significant overlap: a vrātya could adopt a more solitary mystical lifestyle resembling that of the Keśin, and the reverse was equally possible. Boundaries between such categories were fluid rather than rigid. The hymn itself is frequently cited as the earliest attestation of yogic elements—control of the breath symbolized by the girdle of wind, altered states of consciousness, detachment from the body, and the power of flight. Karel Werner in particular regarded it as crucial evidence of a distinct muni tradition standing apart from the culture of the ṛṣis.</p><br>
+		
+		<p>Interpretations of the figure have varied. Some readers see purely historical human ascetics, while others, following Yāska, prefer a cosmic or solar reading. Modern analyses emphasize the outsider status of the Keśin, who stands outside the Brahmanical establishment yet receives a remarkably sympathetic portrayal. Parallels with shamanic practices involving ecstasy, spiritual journeys, and special substances have also been proposed, though such comparisons remain debated. What is striking is the hymn’s benevolent tone toward these marginal figures, an attitude uncommon in Vedic literature.</p><br>
+		
+		<p>Although the Keśin did not form a lasting sect under that name, their image nourished the enduring ideal of the long-haired ascetic, nearly naked or dressed in ochre and linked to Rudra or Śiva. Echoes appear in later descriptions of munis, śramaṇas, and Kāpālikas, and still later in certain radical Śaiva figures, even though clothing colors and practices continued to evolve. The black garments of modern Aghoris, for instance, are not attested in the Vedic period. The piśaṅga color of the Keśin’s rags anticipates the kāṣāya, the ochre or saffron robe of Buddhist monks and Hindu sannyāsins. Red dyes existed during the Vedic period and appeared in certain ritual contexts, but they were not the characteristic color of the early long-haired ascetics, except for those from the <a href="agni-vratya.html" target="_blank">Agnivrātyas</a>. The latter were distinguished in particular by this characteristic terracotta hue—a mixture of blood and red ochre—as well as by their wearing of crocodile skins dyed black. These elements set them distinctly apart from the vānaprastha and other forest ascetics, who, for their part, wore the skins of black gazelles, deer, roe deer, goats, tigers, or elephants.</p><br>
+		
+		<p>In the Keśin of the Rigveda we encounter a foundational moment in Indian spirituality: the emergence of an individual path of silent, mystical asceticism on the margins of dominant ritual structures. Clad in dust and ochre, drinking with Rudra, these long-haired wanderers already embody the ideal of the yogi who transcends ordinary bodily existence while remaining present within the world. Their brief yet powerful hymn remains one of the most valuable sources for understanding the deep roots of asceticism and yoga in ancient India.
+
+</p>
+      </div>
+    </div>
+  </div>
+
+   <main>
+    <section class="hero">
+      <div class="container">
+
+        <div class="grid">
+          <a href="vratya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Vratya</h3>
+            </article>
+          </a>
+          <a href="pasupata.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Pashupata</h3>
+            </article>
+          </a>
+          <a href="sicarius.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Sicarii</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="kapalika.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kapalika</h3>
+            </article>
+          </a>
+          <a href="kalamukha.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Kalamukha</h3>
+            </article>
+          </a>
+          <a href="lingayat-virashaiva.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Lingayat / Virashaiva</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-iyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘iyya</h3>
+            </article>
+          </a>
+          <a href="qalandariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Qalandariyya</h3>
+            </article>
+          </a>
+          <a href="thugs.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Thugs</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="haydariyya-jawbariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Haydariyya / Jawbariyya</h3>
+            </article>
+          </a>
+          <a href="khalwatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Khalwatiyya</h3>
+            </article>
+          </a>
+          <a href="malmatiyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malmatiyya</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="madariyya.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Madariyya</h3>
+            </article>
+          </a>
+          <a href="nath-yogis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Nath Yogis</h3>
+            </article>
+          </a>
+          <a href="dasanami-naga-sannyasi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Dasanami Naga Sannyasi</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="gosain-bairagi.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Gosain & Bairagi</h3>
+            </article>
+          </a>
+          <a href="satnamis.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Satnamis</h3>
+            </article>
+          </a>
+          <a href="chhinnamasta.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Chhinnamasta Sadhaks</h3>
+            </article>
+          </a>
+        </div>
+
+
+        <div class="grid">
+          <a href="rifa-i-al-qubur.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Rifa‘i al-qubur</h3>
+            </article>
+          </a>
+          <a href="aghori.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Aghori</h3>
+            </article>
+          </a>
+          <a href="malangs-jalali-haydari.html" class="card-link">
+            <article class="card">
+              <div class="thumb" style="background-image:url('assets/img/skull-01.jpg')"></div>
+              <h3>Malangs Jalali & Haydari</h3>
+            </article>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+  <div class="container" style="text-align:center; font-size:14px; padding:40px 0">
+    <div>
+      <a href="index.html" style="color:#e8d9b8; text-decoration:none; border-bottom:1px solid transparent; transition:border-bottom 0.3s;">
+        Warrior Ascetics, Criminals and Outcasts
+      </a>
+    </div>
+    <div style="margin-top:8px">© 2002</div>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
